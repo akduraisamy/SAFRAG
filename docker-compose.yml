@@ -1,0 +1,22 @@
+# SAFRAG — SAF + RAG Pipeline
+# Author: Dr. Amudha Kumari Duraisamy
+#
+# Usage:
+#   First-time setup:  docker-compose run --rm app python scripts/ingest.py
+#   Launch UI:         docker-compose up
+#   Stop:              docker-compose down
+
+services:
+  app:
+    build: .
+    container_name: safrag
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes:
+      - ./literatures:/app/literatures:ro      # PDFs (read-only)
+      - ./chroma_db:/app/chroma_db             # Persisted vector index
+    restart: unless-stopped

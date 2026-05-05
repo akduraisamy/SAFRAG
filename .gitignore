@@ -1,0 +1,39 @@
+# SAFRAG — .gitignore
+# Author: Dr. Amudha Kumari Duraisamy
+
+# API keys — NEVER commit
+.env
+
+# Vector database — large, regenerate with: python scripts/ingest.py
+chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/

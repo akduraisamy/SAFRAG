@@ -1,0 +1,23 @@
+# SAFRAG — .dockerignore
+# Author: Dr. Amudha Kumari Duraisamy
+
+.env
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+dist/
+build/
+.DS_Store
+
+# These are mounted as volumes at runtime
+chroma_db/
+literatures/
+
+# Docs (not needed in image)
+README.md
+ROADMAP.md
