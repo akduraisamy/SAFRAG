@@ -156,4 +156,8 @@ Or copy `.env.example` to `.env` and fill in your key — docker-compose will pi
 
 ## License
 
-For academic and research use. Cite accordingly when using outputs in publications.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2026 Dr. Amudha Kumari Duraisamy
+
+Free to use, modify, and distribute with attribution.
